@@ -4,7 +4,7 @@ use Moose;
 use v5.10;
 
 # ABSTRACT: Dist::Zilla ACPS bundle for dists not originally written with Dist::Zilla in mind
-our $VERSION = '0.17'; # VERSION
+our $VERSION = '0.18'; # VERSION
 
 extends 'Dist::Zilla::PluginBundle::ACPS';
 
@@ -16,7 +16,6 @@ sub plugin_list {
     PruneCruft
     ManifestSkip
     License
-    ExtraTests
     ExecDir
 
     TestRelease
@@ -46,7 +45,7 @@ Dist::Zilla::PluginBundle::ACPS::Legacy - Dist::Zilla ACPS bundle for dists not 
 
 =head1 VERSION
 
-version 0.17
+version 0.18
 
 =head1 DESCRIPTION
 

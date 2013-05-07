@@ -10,7 +10,7 @@ use Path::Class qw( file dir );
 use File::ShareDir qw( dist_dir );
 
 # ABSTRACT: the basic plugins to maintain and release ACPS dists
-our $VERSION = '0.17'; # VERSION
+our $VERSION = '0.18'; # VERSION
 
 with 'Dist::Zilla::Role::PluginBundle::Easy';
 
@@ -25,7 +25,6 @@ sub plugin_list {
     MetaJSON
     License
     Readme
-    ExtraTests
     ExecDir
     ModuleBuild
     Manifest
@@ -106,7 +105,7 @@ Dist::Zilla::PluginBundle::ACPS - the basic plugins to maintain and release ACPS
 
 =head1 VERSION
 
-version 0.17
+version 0.18
 
 =head1 DESCRIPTION
 
@@ -120,7 +119,6 @@ It is equivalent to this:
  [MetaJSON]
  [License]
  [Readme]
- [ExtraTests]
  [ExecDir]
  [ModuleBuild]
  [Manifest]

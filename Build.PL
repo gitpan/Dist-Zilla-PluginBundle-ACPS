@@ -17,7 +17,7 @@ my %module_build_args = (
     "Graham Ollis <gollis\@sesda3.com>"
   ],
   "dist_name" => "Dist-Zilla-PluginBundle-ACPS",
-  "dist_version" => "0.17",
+  "dist_version" => "0.18",
   "license" => "restrictive",
   "module_name" => "Dist::Zilla::PluginBundle::ACPS",
   "recommends" => {},
