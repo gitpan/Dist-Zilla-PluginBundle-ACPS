@@ -11,7 +11,7 @@ configure_requires:
   Module::Build: 0.3601
 dynamic_config: 0
 generated_by: 'Dist::Zilla version 4.300034, CPAN::Meta::Converter version 2.130880'
-license: restrictive
+license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
@@ -68,4 +68,4 @@ requires:
   perl: v5.10.0
   strict: 0
   warnings: 0
-version: 0.18
+version: 0.19

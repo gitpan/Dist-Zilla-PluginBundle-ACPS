@@ -5,7 +5,7 @@ use v5.10;
 use Git::Wrapper;
 
 # ABSTRACT: init plugin for ACPS
-our $VERSION = '0.18'; # VERSION
+our $VERSION = '0.19'; # VERSION
 
 with 'Dist::Zilla::Role::AfterMint';
 
@@ -45,12 +45,11 @@ Dist::Zilla::Plugin::ACPS::Mint - init plugin for ACPS
 
 =head1 VERSION
 
-version 0.18
+version 0.19
 
 =head1 DESCRIPTION
 
-Standard init plugin for ACPS distros.  May change in the future,
-but for now it creates a public git repo on acpsdev2.
+Standard init plugin for ACPS distros.
 
 =head1 AUTHOR
 
@@ -58,7 +57,9 @@ Graham Ollis <gollis@sesda3.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2012 by NASA GSFC.  No
-license is granted to other entities.
+This software is copyright (c) 2012 by NASA GSFC.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
 =cut
