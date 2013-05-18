@@ -4,7 +4,7 @@ use Moose;
 use v5.10;
 
 # ABSTRACT: Dist::Zilla ACPS bundle that uses MakeMaker instead of ModuleBuild
-our $VERSION = '0.19'; # VERSION
+our $VERSION = '0.20'; # VERSION
 
 extends 'Dist::Zilla::PluginBundle::ACPS';
 
@@ -31,7 +31,7 @@ Dist::Zilla::PluginBundle::ACPS::MakeMaker - Dist::Zilla ACPS bundle that uses M
 
 =head1 VERSION
 
-version 0.19
+version 0.20
 
 =head1 DESCRIPTION
 

@@ -5,7 +5,7 @@ use v5.10;
 use Git::Wrapper;
 
 # ABSTRACT: init plugin for ACPS
-our $VERSION = '0.19'; # VERSION
+our $VERSION = '0.20'; # VERSION
 
 with 'Dist::Zilla::Role::AfterMint';
 
@@ -45,7 +45,7 @@ Dist::Zilla::Plugin::ACPS::Mint - init plugin for ACPS
 
 =head1 VERSION
 
-version 0.19
+version 0.20
 
 =head1 DESCRIPTION
 
