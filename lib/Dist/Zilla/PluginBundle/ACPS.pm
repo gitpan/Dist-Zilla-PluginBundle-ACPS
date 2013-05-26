@@ -10,7 +10,7 @@ use Path::Class qw( file dir );
 use File::ShareDir qw( dist_dir );
 
 # ABSTRACT: the basic plugins to maintain and release ACPS dists
-our $VERSION = '0.20'; # VERSION
+our $VERSION = '0.21'; # VERSION
 
 with 'Dist::Zilla::Role::PluginBundle::Easy';
 
@@ -38,7 +38,7 @@ sub plugin_list {
   )
 }
 
-sub allow_dirty { [ 'Changes', 'dist.ini' ] };
+sub allow_dirty { [ 'Changes', 'dist.ini', 'README.pod' ] };
 
 sub mvp_multivalue_args { qw( allow_dirty ) }
 
@@ -105,7 +105,7 @@ Dist::Zilla::PluginBundle::ACPS - the basic plugins to maintain and release ACPS
 
 =head1 VERSION
 
-version 0.20
+version 0.21
 
 =head1 DESCRIPTION
 

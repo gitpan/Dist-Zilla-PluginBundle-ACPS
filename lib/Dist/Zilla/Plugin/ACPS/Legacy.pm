@@ -6,7 +6,7 @@ use autodie;
 use JSON qw( from_json );
 
 # ABSTRACT: Dist::Zilla plugin for ACPS CIs that are pre-Dist::Zilla
-our $VERSION = '0.20'; # VERSION
+our $VERSION = '0.21'; # VERSION
 
 with qw(
   Dist::Zilla::Role::VersionProvider
@@ -70,7 +70,7 @@ Dist::Zilla::Plugin::ACPS::Legacy - Dist::Zilla plugin for ACPS CIs that are pre
 
 =head1 VERSION
 
-version 0.20
+version 0.21
 
 =head1 DESCRIPTION
 
