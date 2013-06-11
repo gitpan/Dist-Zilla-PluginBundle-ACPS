@@ -7,7 +7,7 @@ use File::Spec;
 use Dist::Zilla::PluginBundle::ACPS;
 
 # ABSTRACT: ACPS Dist::Zilla minting profile
-our $VERSION = '0.21'; # VERSION
+our $VERSION = '0.23'; # VERSION
 
 with qw( Dist::Zilla::Role::MintingProfile );
 
@@ -58,7 +58,7 @@ __PACKAGE__->meta->make_immutable;
 
 1;
 
-__END__
+
 
 =pod
 
@@ -68,7 +68,7 @@ Dist::Zilla::MintingProfile::ACPS - ACPS Dist::Zilla minting profile
 
 =head1 VERSION
 
-version 0.21
+version 0.23
 
 =head1 SYNOPSIS
 
@@ -90,3 +90,7 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
+
+
+__END__
+

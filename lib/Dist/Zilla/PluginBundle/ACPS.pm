@@ -10,7 +10,7 @@ use Path::Class qw( file dir );
 use File::ShareDir qw( dist_dir );
 
 # ABSTRACT: the basic plugins to maintain and release ACPS dists
-our $VERSION = '0.21'; # VERSION
+our $VERSION = '0.23'; # VERSION
 
 with 'Dist::Zilla::Role::PluginBundle::Easy';
 
@@ -95,7 +95,7 @@ __PACKAGE__->meta->make_immutable;
 
 1;
 
-__END__
+
 
 =pod
 
@@ -105,7 +105,7 @@ Dist::Zilla::PluginBundle::ACPS - the basic plugins to maintain and release ACPS
 
 =head1 VERSION
 
-version 0.21
+version 0.23
 
 =head1 DESCRIPTION
 
@@ -146,3 +146,7 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
+
+
+__END__
+

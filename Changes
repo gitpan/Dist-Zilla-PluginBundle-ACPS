@@ -1,5 +1,11 @@
 Revision history for Dist-Zilla-PluginBundle-ACPS
 
+0.23      2013-06-11 07:31:47 America/New_York
+  - use [Author::Plicease::UploadToCPAN]
+
+0.22      2013-06-11 07:30:03 America/New_York
+  - add .travis.yml to minted dist
+
 0.21      2013-05-25 23:22:24 America/New_York
   - Allow README.pod to be dirty for release
 

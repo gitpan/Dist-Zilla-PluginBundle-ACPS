@@ -4,7 +4,7 @@ use Moose;
 use v5.10;
 
 # ABSTRACT: Dist::Zilla ACPS bundle that uses MakeMaker instead of ModuleBuild
-our $VERSION = '0.21'; # VERSION
+our $VERSION = '0.23'; # VERSION
 
 extends 'Dist::Zilla::PluginBundle::ACPS';
 
@@ -21,7 +21,7 @@ __PACKAGE__->meta->make_immutable;
 
 1;
 
-__END__
+
 
 =pod
 
@@ -31,7 +31,7 @@ Dist::Zilla::PluginBundle::ACPS::MakeMaker - Dist::Zilla ACPS bundle that uses M
 
 =head1 VERSION
 
-version 0.21
+version 0.23
 
 =head1 DESCRIPTION
 
@@ -50,3 +50,7 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
+
+
+__END__
+

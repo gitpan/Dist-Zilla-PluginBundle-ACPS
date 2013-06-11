@@ -6,7 +6,7 @@ use autodie;
 use JSON qw( from_json );
 
 # ABSTRACT: Dist::Zilla plugin for ACPS CIs that are pre-Dist::Zilla
-our $VERSION = '0.21'; # VERSION
+our $VERSION = '0.23'; # VERSION
 
 with qw(
   Dist::Zilla::Role::VersionProvider
@@ -60,7 +60,7 @@ __PACKAGE__->meta->make_immutable;
 
 1;
 
-__END__
+
 
 =pod
 
@@ -70,7 +70,7 @@ Dist::Zilla::Plugin::ACPS::Legacy - Dist::Zilla plugin for ACPS CIs that are pre
 
 =head1 VERSION
 
-version 0.21
+version 0.23
 
 =head1 DESCRIPTION
 
@@ -97,3 +97,7 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
+
+
+__END__
+

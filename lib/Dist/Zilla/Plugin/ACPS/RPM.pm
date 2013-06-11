@@ -11,7 +11,7 @@ use List::MoreUtils qw( uniq );
 use Template;
 
 # ABSTRACT: RPM Dist::Zilla plugin for ACPS
-our $VERSION = '0.21'; # VERSION
+our $VERSION = '0.23'; # VERSION
 
 with 'Dist::Zilla::Role::Plugin';
 
@@ -151,7 +151,7 @@ __PACKAGE__->meta->make_immutable;
 
 1;
 
-__END__
+
 
 =pod
 
@@ -161,7 +161,7 @@ Dist::Zilla::Plugin::ACPS::RPM - RPM Dist::Zilla plugin for ACPS
 
 =head1 VERSION
 
-version 0.21
+version 0.23
 
 =head1 SYNOPSIS
 
@@ -201,3 +201,7 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
+
+
+__END__
+
