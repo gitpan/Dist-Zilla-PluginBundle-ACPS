@@ -1,5 +1,8 @@
 Revision history for Dist-Zilla-PluginBundle-ACPS
 
+0.24      2013-06-12 09:47:26 America/New_York
+  - modified default dist.ini (comments only)
+
 0.23      2013-06-11 07:31:47 America/New_York
   - use [Author::Plicease::UploadToCPAN]
 
