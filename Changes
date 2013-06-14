@@ -1,5 +1,8 @@
 Revision history for Dist-Zilla-PluginBundle-ACPS
 
+0.25      2013-06-14 17:25:03 America/New_York
+  - don't prune .travis.yml from dist
+
 0.24      2013-06-12 09:47:26 America/New_York
   - modified default dist.ini (comments only)
 

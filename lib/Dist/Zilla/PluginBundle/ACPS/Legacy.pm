@@ -4,28 +4,20 @@ use Moose;
 use v5.10;
 
 # ABSTRACT: Dist::Zilla ACPS bundle for dists not originally written with Dist::Zilla in mind
-our $VERSION = '0.24'; # VERSION
+our $VERSION = '0.25'; # VERSION
 
 extends 'Dist::Zilla::PluginBundle::ACPS';
 
 use namespace::autoclean;
 
-sub plugin_list {
-  qw(
-    GatherDir
-    PruneCruft
-    ManifestSkip
-    License
-    ExecDir
-
-    TestRelease
-    ConfirmRelease
-    ACPS::Legacy
-
-    PodVersion
-    OurPkgVersion
-  )
-}
+around plugin_list => sub {
+  my $orig = shift;
+  my $self = shift;
+  
+  my @list = grep { (ref $_ ? $_->[0] : $_) !~ /^(Meta(YAML|JSON)|Readme|ModuleBuild|Manifest|PodWeaver|NextRelease|AutoPrereqs|OurPkgVersion)$/ } $self->$orig(@_);
+  push @list, 'ACPS::Legacy';
+  @list;
+};
 
 sub is_legacy { 1 }
 
@@ -45,7 +37,7 @@ Dist::Zilla::PluginBundle::ACPS::Legacy - Dist::Zilla ACPS bundle for dists not 
 
 =head1 VERSION
 
-version 0.24
+version 0.25
 
 =head1 DESCRIPTION
 

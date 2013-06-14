@@ -4,7 +4,7 @@ use Moose;
 use v5.10;
 
 # ABSTRACT: Dist::Zilla ACPS bundle that uses MakeMaker instead of ModuleBuild
-our $VERSION = '0.24'; # VERSION
+our $VERSION = '0.25'; # VERSION
 
 extends 'Dist::Zilla::PluginBundle::ACPS';
 
@@ -14,7 +14,7 @@ around plugin_list => sub {
   my $orig = shift;
   my $self = shift;
   
-  map { s/^ModuleBuild$/MakeMaker/; $_ } $self->$orig(@_);
+  map { (ref $_ ? $_->[0] : $_) =~ s/^ModuleBuild$/MakeMaker/; $_ } $self->$orig(@_);
 };
 
 __PACKAGE__->meta->make_immutable;
@@ -31,7 +31,7 @@ Dist::Zilla::PluginBundle::ACPS::MakeMaker - Dist::Zilla ACPS bundle that uses M
 
 =head1 VERSION
 
-version 0.24
+version 0.25
 
 =head1 DESCRIPTION
 

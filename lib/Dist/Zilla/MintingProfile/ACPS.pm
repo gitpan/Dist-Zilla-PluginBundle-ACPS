@@ -7,7 +7,7 @@ use File::Spec;
 use Dist::Zilla::PluginBundle::ACPS;
 
 # ABSTRACT: ACPS Dist::Zilla minting profile
-our $VERSION = '0.24'; # VERSION
+our $VERSION = '0.25'; # VERSION
 
 with qw( Dist::Zilla::Role::MintingProfile );
 
@@ -68,7 +68,7 @@ Dist::Zilla::MintingProfile::ACPS - ACPS Dist::Zilla minting profile
 
 =head1 VERSION
 
-version 0.24
+version 0.25
 
 =head1 SYNOPSIS
 

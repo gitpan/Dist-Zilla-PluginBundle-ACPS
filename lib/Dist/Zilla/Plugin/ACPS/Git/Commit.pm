@@ -13,7 +13,7 @@ use warnings;
 package Dist::Zilla::Plugin::ACPS::Git::Commit;
 
 # ABSTRACT: commit dirty files
-our $VERSION = '0.24'; # VERSION
+our $VERSION = '0.25'; # VERSION
 
 use File::Temp           qw{ tempfile };
 use Git::Wrapper;
@@ -134,7 +134,7 @@ Dist::Zilla::Plugin::ACPS::Git::Commit - commit dirty files
 
 =head1 VERSION
 
-version 0.24
+version 0.25
 
 =head1 SYNOPSIS
 

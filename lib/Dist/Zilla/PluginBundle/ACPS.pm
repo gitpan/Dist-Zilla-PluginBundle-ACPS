@@ -10,17 +10,17 @@ use Path::Class qw( file dir );
 use File::ShareDir qw( dist_dir );
 
 # ABSTRACT: the basic plugins to maintain and release ACPS dists
-our $VERSION = '0.24'; # VERSION
+our $VERSION = '0.25'; # VERSION
 
 with 'Dist::Zilla::Role::PluginBundle::Easy';
 
 use namespace::autoclean;
 
 sub plugin_list {
-  qw(
-    GatherDir
-    PruneCruft
-    ManifestSkip
+  (qw(
+    GatherDir ),
+    [ PruneCruft => { except => '.travis.yml' } ],
+   qw(ManifestSkip
     MetaYAML
     MetaJSON
     License
@@ -35,7 +35,7 @@ sub plugin_list {
     NextRelease
     AutoPrereqs
     OurPkgVersion
-  )
+  ))
 }
 
 sub allow_dirty { [ 'Changes', 'dist.ini', 'README.pod' ] };
@@ -105,7 +105,7 @@ Dist::Zilla::PluginBundle::ACPS - the basic plugins to maintain and release ACPS
 
 =head1 VERSION
 
-version 0.24
+version 0.25
 
 =head1 DESCRIPTION
 
