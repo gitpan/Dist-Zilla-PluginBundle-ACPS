@@ -1,5 +1,11 @@
 Revision history for Dist-Zilla-PluginBundle-ACPS
 
+0.27      2013-07-06 18:07:02 America/New_York
+  - commit README.pod after release if it is there
+
+0.26      2013-06-19 17:09:39 America/New_York
+  - don't generate debug packages when building rpms
+
 0.25      2013-06-14 17:25:03 America/New_York
   - don't prune .travis.yml from dist
 

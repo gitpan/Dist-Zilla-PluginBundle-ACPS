@@ -1,13 +1,42 @@
+NAME
+    Dist::Zilla::PluginBundle::ACPS - the basic plugins to maintain and
+    release ACPS dists
 
+VERSION
+    version 0.27
 
-This archive contains the distribution Dist-Zilla-PluginBundle-ACPS,
-version 0.25:
+DESCRIPTION
+    Plugin bundle for creating and maintaining Perl distributions for ACPS.
+    It is equivalent to this:
 
-  the basic plugins to maintain and release ACPS dists
+     [GatherDir]
+     [PruneCruft]
+     [ManifestSkip]
+     [MetaYAML]
+     [MetaJSON]
+     [License]
+     [Readme]
+     [ExecDir]
+     [ModuleBuild]
+     [Manifest]
+     [TestRelease]
+     [ConfirmRelease]
+ 
+     [PodWeaver]
+     [NextRelease]
+     [AutoPrereqs]
+     [OurPkgVersion]
+ 
+     [Git::Check]
+     [ACPS::Git::Commit]
+     [ACPS::Release]
 
-This software is copyright (c) 2012 by NASA GSFC.
+AUTHOR
+    Graham Ollis <gollis@sesda3.com>
 
-This is free software; you can redistribute it and/or modify it under
-the same terms as the Perl 5 programming language system itself.
+COPYRIGHT AND LICENSE
+    This software is copyright (c) 2012 by NASA GSFC.
 
+    This is free software; you can redistribute it and/or modify it under
+    the same terms as the Perl 5 programming language system itself.
 

@@ -1,7 +1,7 @@
 package Dist::Zilla::Plugin::ACPS::Release;
 
 # ABSTRACT: release plugin for ACPS
-our $VERSION = '0.25'; # VERSION
+our $VERSION = '0.27'; # VERSION
 
 use Moose;
 use v5.10;
@@ -70,7 +70,14 @@ sub after_release
   if(!$self->legacy)
   {
     $self->log("update Changes");
-    $git->commit({ message => "update Changes" }, 'Changes');
+    if(-r 'README.pod')
+    {
+      $git->commit({ message => "update Changes + README.pod" }, 'Changes', 'README.pod');
+    }
+    else
+    {
+      $git->commit({ message => "update Changes" }, 'Changes');
+    }
     $self->log("push");
     $git->push($repo);
     $git->push($repo, "release");
@@ -100,7 +107,7 @@ Dist::Zilla::Plugin::ACPS::Release - release plugin for ACPS
 
 =head1 VERSION
 
-version 0.25
+version 0.27
 
 =head1 DESCRIPTION
 

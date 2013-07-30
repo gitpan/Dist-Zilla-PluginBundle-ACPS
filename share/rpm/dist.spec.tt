@@ -19,6 +19,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-BUILD
 %define acps_prefix /util
 Prefix: %{acps_prefix}
 
+%define debug_package %{nil}
 %define _use_internal_dependency_generator 0
 %define __find_requires %{_tmppath}/%{name}-%{version}-%{release}-%(%{__id_u} -n)-filter-requires
 %define __find_provides %{_tmppath}/%{name}-%{version}-%{release}-%(%{__id_u} -n)-filter-provides

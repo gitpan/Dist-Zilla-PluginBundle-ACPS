@@ -69,4 +69,8 @@ requires:
   perl: v5.10.0
   strict: 0
   warnings: 0
-version: 0.25
+resources:
+  bugtracker: https://github.com/plicease/dist-zilla-pluginbundle-acps/issues
+  homepage: http://perl.wdlabs.com/Dist-Zilla-PluginBundle-ACPS/
+  repository: git://github.com/plicease/dist-zilla-pluginbundle-acps.git
+version: 0.27

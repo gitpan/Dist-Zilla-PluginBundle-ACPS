@@ -91,6 +91,17 @@
       }
    },
    "release_status" : "stable",
-   "version" : "0.25"
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/plicease/dist-zilla-pluginbundle-acps/issues"
+      },
+      "homepage" : "http://perl.wdlabs.com/Dist-Zilla-PluginBundle-ACPS/",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/plicease/dist-zilla-pluginbundle-acps.git",
+         "web" : "https://github.com/plicease/dist-zilla-pluginbundle-acps"
+      }
+   },
+   "version" : "0.27"
 }
 
