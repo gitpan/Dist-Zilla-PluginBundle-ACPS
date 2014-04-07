@@ -10,7 +10,7 @@ use Path::Class qw( file dir );
 use File::ShareDir qw( dist_dir );
 
 # ABSTRACT: the basic plugins to maintain and release ACPS dists
-our $VERSION = '0.27'; # VERSION
+our $VERSION = '0.28'; # VERSION
 
 with 'Dist::Zilla::Role::PluginBundle::Easy';
 
@@ -47,7 +47,12 @@ sub is_legacy { 0 }
 sub configure {
   my($self) = @_;
 
-  $self->add_plugins($self->plugin_list);
+  $self->add_plugins(map { 
+    $_ ne 'ModuleBuild' ? $_ : do {
+      my %args = map { $_ => $self->payload->{$_} } grep /^mb_/, keys %{ $self->payload };
+      [ 'ModuleBuild' => \%args ],
+    }
+  }$self->plugin_list);
 
   my $allow_dirty = $self->allow_dirty;
   if(defined $self->payload->{allow_dirty})
@@ -105,7 +110,7 @@ Dist::Zilla::PluginBundle::ACPS - the basic plugins to maintain and release ACPS
 
 =head1 VERSION
 
-version 0.27
+version 0.28
 
 =head1 DESCRIPTION
 

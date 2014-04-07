@@ -1,5 +1,10 @@
 Revision history for Dist-Zilla-PluginBundle-ACPS
 
+0.28      2014-04-07 11:48:38 America/New_York
+
+0.28      2014-04-07 11:47:43 America/New_York
+  - [@ACPS] mb_ prefixed values are passed into [ModuleBuild], if present
+
 0.27      2013-07-06 18:07:02 America/New_York
   - commit README.pod after release if it is there
 

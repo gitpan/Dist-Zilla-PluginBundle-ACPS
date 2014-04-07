@@ -7,10 +7,7 @@ use Module::Build 0.3601;
 
 my %module_build_args = (
   "build_requires" => {
-    "FindBin" => 0,
-    "Module::Build" => "0.3601",
-    "Test::DZil" => 0,
-    "Test::More" => 0
+    "Module::Build" => "0.3601"
   },
   "configure_requires" => {
     "Module::Build" => "0.3601"
@@ -20,7 +17,7 @@ my %module_build_args = (
     "Graham Ollis <gollis\@sesda3.com>"
   ],
   "dist_name" => "Dist-Zilla-PluginBundle-ACPS",
-  "dist_version" => "0.27",
+  "dist_version" => "0.28",
   "license" => "perl",
   "module_name" => "Dist::Zilla::PluginBundle::ACPS",
   "recommends" => {},
@@ -78,9 +75,27 @@ my %module_build_args = (
   "script_files" => [],
   "share_dir" => {
     "dist" => "share"
+  },
+  "test_requires" => {
+    "FindBin" => 0,
+    "Test::DZil" => 0,
+    "Test::More" => 0
   }
 );
 
+
+my %fallback_build_requires = (
+  "FindBin" => 0,
+  "Module::Build" => "0.3601",
+  "Test::DZil" => 0,
+  "Test::More" => 0
+);
+
+
+unless ( eval { Module::Build->VERSION(0.4004) } ) {
+  delete $module_build_args{test_requires};
+  $module_build_args{build_requires} = \%fallback_build_requires;
+}
 
 my $build = Module::Build->new(%module_build_args);
 

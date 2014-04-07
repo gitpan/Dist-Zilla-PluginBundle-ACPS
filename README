@@ -1,11 +1,14 @@
 NAME
+
     Dist::Zilla::PluginBundle::ACPS - the basic plugins to maintain and
     release ACPS dists
 
 VERSION
-    version 0.27
+
+    version 0.28
 
 DESCRIPTION
+
     Plugin bundle for creating and maintaining Perl distributions for ACPS.
     It is equivalent to this:
 
@@ -21,20 +24,22 @@ DESCRIPTION
      [Manifest]
      [TestRelease]
      [ConfirmRelease]
- 
+     
      [PodWeaver]
      [NextRelease]
      [AutoPrereqs]
      [OurPkgVersion]
- 
+     
      [Git::Check]
      [ACPS::Git::Commit]
      [ACPS::Release]
 
 AUTHOR
+
     Graham Ollis <gollis@sesda3.com>
 
 COPYRIGHT AND LICENSE
+
     This software is copyright (c) 2012 by NASA GSFC.
 
     This is free software; you can redistribute it and/or modify it under
