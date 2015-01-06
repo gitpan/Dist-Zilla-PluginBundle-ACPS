@@ -30,10 +30,10 @@ share/profiles/mbd_app/plugins.ini
 share/profiles/mbd_app/profile.ini
 share/rpm/dist-local.spec
 share/rpm/dist.spec.tt
-t/app.t
-t/client.t
 t/make_maker.t
-t/mbd_app.t
+t/mint_clustericious_app.t
+t/mint_clustericious_client.t
+t/mint_clustericious_mbd_app.t
 t/mint_default.t
 t/share_dir.t
 t/use.t

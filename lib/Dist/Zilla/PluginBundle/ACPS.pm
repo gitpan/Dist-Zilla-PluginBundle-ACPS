@@ -9,8 +9,8 @@ use Dist::Zilla::Plugin::OurPkgVersion;
 use Path::Class qw( file dir );
 use File::ShareDir qw( dist_dir );
 
-# ABSTRACT: the basic plugins to maintain and release ACPS dists
-our $VERSION = '0.28'; # VERSION
+# ABSTRACT: Basic plugins to maintain and release ACPS dists
+our $VERSION = '0.30'; # VERSION
 
 with 'Dist::Zilla::Role::PluginBundle::Easy';
 
@@ -106,11 +106,11 @@ __PACKAGE__->meta->make_immutable;
 
 =head1 NAME
 
-Dist::Zilla::PluginBundle::ACPS - the basic plugins to maintain and release ACPS dists
+Dist::Zilla::PluginBundle::ACPS - Basic plugins to maintain and release ACPS dists
 
 =head1 VERSION
 
-version 0.28
+version 0.30
 
 =head1 DESCRIPTION
 

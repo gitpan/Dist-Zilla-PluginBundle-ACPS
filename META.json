@@ -1,5 +1,5 @@
 {
-   "abstract" : "the basic plugins to maintain and release ACPS dists",
+   "abstract" : "Basic plugins to maintain and release ACPS dists",
    "author" : [
       "Graham Ollis <gollis@sesda3.com>"
    ],
@@ -35,7 +35,6 @@
             "Cwd" : "0",
             "DateTime" : "0",
             "Dist::Zilla" : "0",
-            "Dist::Zilla::MintingProfile::Clustericious" : "0",
             "Dist::Zilla::Plugin::MinimumPerl" : "0",
             "Dist::Zilla::Plugin::OurPkgVersion" : "0",
             "Dist::Zilla::Plugin::PodWeaver" : "0",
@@ -102,6 +101,6 @@
          "web" : "https://github.com/plicease/dist-zilla-pluginbundle-acps"
       }
    },
-   "version" : "0.28"
+   "version" : "0.30"
 }
 

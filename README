@@ -1,11 +1,11 @@
 NAME
 
-    Dist::Zilla::PluginBundle::ACPS - the basic plugins to maintain and
-    release ACPS dists
+    Dist::Zilla::PluginBundle::ACPS - Basic plugins to maintain and release
+    ACPS dists
 
 VERSION
 
-    version 0.28
+    version 0.30
 
 DESCRIPTION
 

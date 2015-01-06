@@ -1,9 +1,14 @@
 use strict;
 use warnings;
-use Test::More tests => 1;
+use Test::More;
 use Test::DZil;
 use Path::Class qw( file dir );
 use FindBin ();
+
+plan skip_all => 'test requires Dist::Zilla::MintingProfile::Clustericious'
+  unless eval q{ use Dist::Zilla::MintingProfile::Clustericious; 1 };
+
+plan tests => 1;
 
 $ENV{DIST_ZILLA_PLUGINBUNDLE_ACPS} = dir($FindBin::Bin)->parent->subdir('share')->stringify;
 

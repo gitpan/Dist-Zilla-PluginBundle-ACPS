@@ -12,12 +12,12 @@ my %module_build_args = (
   "configure_requires" => {
     "Module::Build" => "0.3601"
   },
-  "dist_abstract" => "the basic plugins to maintain and release ACPS dists",
+  "dist_abstract" => "Basic plugins to maintain and release ACPS dists",
   "dist_author" => [
     "Graham Ollis <gollis\@sesda3.com>"
   ],
   "dist_name" => "Dist-Zilla-PluginBundle-ACPS",
-  "dist_version" => "0.28",
+  "dist_version" => "0.30",
   "license" => "perl",
   "module_name" => "Dist::Zilla::PluginBundle::ACPS",
   "recommends" => {},
@@ -26,7 +26,6 @@ my %module_build_args = (
     "Cwd" => 0,
     "DateTime" => 0,
     "Dist::Zilla" => 0,
-    "Dist::Zilla::MintingProfile::Clustericious" => 0,
     "Dist::Zilla::Plugin::MinimumPerl" => 0,
     "Dist::Zilla::Plugin::OurPkgVersion" => 0,
     "Dist::Zilla::Plugin::PodWeaver" => 0,
